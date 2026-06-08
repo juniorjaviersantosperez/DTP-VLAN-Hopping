@@ -167,20 +167,6 @@ Gi0/3   desirable   n-802.1q        trunking    1
 
 `Gi0/3` pasó de **access** a **trunking** — el atacante ahora tiene acceso a VLANs 1-4094.
 
-### Paso 4 — Post-explotación (acceso a todas las VLANs)
-
-```bash
-sudo ip link set eth0 promisc on
-
-sudo ip link add link eth0 name eth0.1 type vlan id 1
-sudo ip link set eth0.1 up
-
-sudo ip link add link eth0 name eth0.10 type vlan id 10
-sudo ip link set eth0.10 up
-sudo ip addr add 10.15.10.200/24 dev eth0.10
-
-sudo tcpdump -i eth0 -e "ether proto 0x8100"
-```
 
 ---
 
