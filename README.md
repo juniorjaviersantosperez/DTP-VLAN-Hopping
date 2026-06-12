@@ -184,12 +184,11 @@ Gi0/3   desirable   n-802.1q        trunking    1
 ### Ataque fallido — puerto aún en access (fase diagnóstico)
 ![Diagnóstico](capturas/04_puerto_static_access.png)
 
-### Ataque exitoso — Gi0/3 en trunking
-![Ataque exitoso](capturas/05_ataque_exitoso_trunk.png)
+![Ataque Exitoso](capturas/04_ataque_exitoso_trunk.png)
 
-### Mitigación aplicada — DTP desactivado
-![Mitigación](capturas/06_mitigacion_aplicada.png)
+## Mitigación Aplicada
 
+![Mitigación](capturas/05_mitigacion_aplicada.png)
 ---
 
 ## 7. Contramedidas
